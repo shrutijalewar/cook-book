@@ -1,11 +1,13 @@
 (function(){
   'use strict';
 
+
   $(document).ready(function(){
     $('#hide').click(hide);
     $('#show').click(show);
     $('form').submit(addRecipe);
   });
+
   function addRecipe(e){
     var data = $('form').serialize(),
         type = $('form').attr('method'),
@@ -17,6 +19,7 @@
 
     e.preventDefault();
   }
+
   function hide(){
     $('form').fadeOut(2000);
   }
